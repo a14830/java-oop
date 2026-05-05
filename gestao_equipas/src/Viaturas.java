@@ -1,35 +1,36 @@
-class Viaturas {
-    String tipo;
-    String rodas;
-    int velMax;
+public class Viaturas {
+    private String viatura;
+    private int numRodas;
+    private int velMax;
 
     public Viaturas() {
     }
 
-    public Viaturas(String tipo, String rodas, int velMax) {
-        this.tipo = tipo;
-        this.rodas = rodas;
+    public Viaturas(String viatura, int numRodas, int velMax) {
+        this.viatura = viatura;
+        this.numRodas = numRodas;
         this.velMax = velMax;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getViatura() {
+        return viatura;
     }
 
-    public String getRodas() {
-        return rodas;
+    public int getNumRodas() {
+        return numRodas;
     }
 
     public int getVelMax() {
         return velMax;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    // Setters
+    public void setViatura(String viatura) {
+        this.viatura = viatura;
     }
 
-    public void setRodas(String rodas) {
-        this.rodas = rodas;
+    public void setNumRodas(int numRodas) {
+        this.numRodas = numRodas;
     }
 
     public void setVelMax(int velMax) {
@@ -38,7 +39,13 @@ class Viaturas {
 
     @Override
     public String toString() {
-        return "Tipo: " + tipo + ", Rodas: " + rodas + ", VelMax: " + velMax;
+        return "Viaturas [tipo da viatura: " + viatura +  ", numero de rodas: " + numRodas + ", velocidade maxima: " + velMax + "]";
     }
-}
 
+    void mostraInfo (){
+        System.out.println("Info do carro: \n Tipo viatura:" + viatura + "\n numRodas: " + numRodas + "\n velMax. " + velMax);
+    }
+    
+
+    
+}

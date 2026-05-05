@@ -42,7 +42,9 @@ public class Cruzeiro extends Barco {
                 + getNomeBarco() + "]";
     }
 
-    void mostraInfoCruzeiro() {
+    public void mostraInfoCruzeiro() {
+        mostraInfo();
+        super.mostraInfo();
         System.out.println("Numero de Quartos: " + numQuarto);
         System.out.println("Numero de Pisos: " + numPisos);
         System.out.println("Nome do Barco: " + nomeBarco);

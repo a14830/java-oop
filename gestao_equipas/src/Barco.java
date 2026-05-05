@@ -11,12 +11,12 @@ public class Barco extends Viaturas {
     }
 
     public Barco () {
-        super("Barco", 0, 0);
+        super("Desportivo", 0, 0);
     }
     
     @Override
     void mostraInfo (){
-        System.out.println("Info do carro: \n Tipo viatura:" + getViatura() + "\n numRodas: " + getNumRodas() + "\n velMax. " + getVelMax());
+        System.out.println("Info do Barco: \n Tipo Barco: " + getViatura() + "\n numero de Rodas: " + getNumRodas() + "\n velocidade Maxima: " + getVelMax());
     }
 
 }

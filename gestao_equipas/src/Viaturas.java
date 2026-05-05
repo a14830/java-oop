@@ -43,7 +43,7 @@ public class Viaturas {
     }
 
     void mostraInfo (){
-        System.out.println("Info do carro: \n Tipo viatura:" + viatura + "\n numRodas: " + numRodas + "\n velMax. " + velMax);
+        System.out.println("Info do carro: \n Tipo viatura:" + viatura + "\n numero de Rodas: " + numRodas + "\n velMax. " + velMax);
     }
     
 
